@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+.swiper {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.swiper-slide {
+  transition: all 0.4s ease;
+  transform: scale(0.8);
+  opacity: 0.6;
+}
+
+.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7a59 !important;
+}
