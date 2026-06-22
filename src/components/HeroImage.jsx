@@ -8,7 +8,9 @@ export default function HeroImage() {
           src={profile}
           alt="Vishesh"
           className="
-            w-[clamp(280px,28vw,520px)]
+            w-[220px]
+            sm:w-[260px]
+            md:w-[clamp(280px,28vw,520px)]
             aspect-square
             object-cover
             rounded-xl

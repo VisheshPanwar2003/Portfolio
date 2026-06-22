@@ -11,11 +11,12 @@ export default function ScrollToTopButton() {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () =>
+    return () => {
       window.removeEventListener(
         "scroll",
         handleScroll
       );
+    };
   }, []);
 
   const scrollToTop = () => {
@@ -28,7 +29,10 @@ export default function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
+      aria-label="Scroll to top"
       className={`
+        hidden md:flex
+
         fixed
         bottom-8
         right-8
@@ -42,7 +46,6 @@ export default function ScrollToTopButton() {
         from-blue-500
         to-purple-500
 
-        flex
         items-center
         justify-center
 

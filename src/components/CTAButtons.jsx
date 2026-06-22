@@ -9,7 +9,8 @@ export default function CTAButtons() {
         md:justify-start
       "
     >
-      <button
+      <a
+        href="#contact"
         className="
           bg-orange-400
           text-white
@@ -21,10 +22,14 @@ export default function CTAButtons() {
           px-[clamp(1rem,1.5vw,2rem)]
           py-[clamp(0.75rem,1vw,1rem)]
           text-[clamp(0.9rem,1vw,1.1rem)]
+
+          inline-flex
+          items-center
+          justify-center
         "
       >
         Got A Project?
-      </button>
+      </a>
 
       <button
         className="

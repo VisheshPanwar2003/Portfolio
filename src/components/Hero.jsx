@@ -6,9 +6,13 @@ export default function Hero() {
     <section
       className="
         w-full
+        overflow-hidden
         min-h-screen
         flex
-        items-center
+        items-start
+        md:items-center
+        pt-16
+        md:pt-0
         py-[clamp(3rem,6vw,8rem)]
       "
     >
@@ -23,9 +27,9 @@ export default function Hero() {
         <div
           className="
             grid
+            grid-cols-1
             md:grid-cols-2
             items-center
-
             gap-[clamp(2rem,5vw,8rem)]
           "
         >

@@ -2,7 +2,7 @@ import CTAButtons from "./CTAButtons";
 
 export default function HeroContent() {
   return (
-    <div className="text-center md:text-left">
+    <div className="text-left md:text-left">
       <h2
         className="
           text-[clamp(2rem,3vw,4rem)]
@@ -20,7 +20,7 @@ export default function HeroContent() {
           h-[3px]
           bg-orange-400
           mb-[clamp(1rem,1.5vw,2rem)]
-          mx-auto
+          mx-0
           md:mx-0
         "
       />
@@ -38,7 +38,9 @@ export default function HeroContent() {
 
       <h1
         className="
-          text-[clamp(3rem,5vw,6rem)]
+          text-[2rem]
+          sm:text-[2.5rem]
+          md:text-[clamp(3rem,5vw,6rem)]
           font-bold
           text-white
           leading-tight
@@ -48,7 +50,7 @@ export default function HeroContent() {
       >
         Software Developer
       </h1>
-
+      
       <CTAButtons />
     </div>
   );
